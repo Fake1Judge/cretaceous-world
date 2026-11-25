@@ -1,0 +1,759 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cretaceous World</title>
+
+<style>
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{
+ margin:0;
+ font-family:Arial,sans-serif;
+ background:#101b16;
+ color:#f1f5ed;
+ line-height:1.8;
+}
+header{
+ background:#172b20;
+ padding:20px;
+ text-align:center;
+ border-bottom:2px solid #8aab67;
+}
+header h1{color:#b8d58b;font-size:30px}
+nav{
+ display:flex;
+ flex-wrap:wrap;
+ justify-content:center;
+ gap:8px;
+ padding:15px;
+ background:#20372a;
+ position:sticky;
+ top:0;
+ z-index:10;
+}
+nav button{
+ background:#476b43;
+ color:white;
+ border:0;
+ padding:10px 14px;
+ border-radius:8px;
+ font-weight:bold;
+}
+nav button:hover{background:#8aab67;color:#102015}
+section{
+ display:none;
+ padding:25px 18px;
+ max-width:950px;
+ margin:auto;
+ min-height:75vh;
+}
+section.active{display:block}
+h2{color:#b8d58b;font-size:27px}
+h3{color:#d1e5a9}
+p{font-size:16px}
+.hero{
+ text-align:center;
+ padding:65px 20px;
+ background:linear-gradient(120deg,#14251b,#46613c);
+ border-radius:15px;
+ margin-top:15px;
+}
+.hero h2{font-size:35px}
+img{
+ width:100%;
+ max-height:380px;
+ object-fit:cover;
+ border-radius:12px;
+ margin:15px 0;
+ border:2px solid #607c4e;
+}
+.card{
+ background:#1c3024;
+ padding:18px;
+ border-radius:12px;
+ margin:18px 0;
+}
+footer{
+ text-align:center;
+ padding:25px;
+ background:#172b20;
+ color:#b8d58b;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🦖 CRETACEOUS WORLD</h1>
+<p>Explore the Last Age of Dinosaurs</p>
+</header>
+
+<nav>
+<button onclick="showPage('home')">Home</button>
+<button onclick="showPage('history')">History</button>
+<button onclick="showPage('dinosaurs')">Dinosaurs</button>
+<button onclick="showPage('ecosystems')">Ecosystems</button>
+<button onclick="showPage('life')">Ancient Life</button>
+<button onclick="showPage('extinction')">Extinction</button>
+</nav>
+
+<section id="home" class="active">
+<div class="hero">
+<h2>Welcome to the Cretaceous Period</h2>
+<p>Discover a world ruled by dinosaurs, ancient oceans, mysterious forests and extraordinary creatures.</p>
+</div>
+
+<div class="card">
+<h2>What Was the Cretaceous Period?</h2>
+<p>
+The Cretaceous Period was the final period of the Mesozoic Era.
+It began approximately 145 million years ago and ended about
+66 million years ago. It was one of the most fascinating chapters
+in the history of life on Earth.
+</p>
+<p>
+During this time, dinosaurs lived in many different environments.
+Some were enormous plant-eaters, while others were powerful predators.
+The continents continued moving apart, oceans changed, and flowering
+plants began spreading across the planet.
+</p>
+</div>
+
+<div class="card">
+<h2>A World Full of Wonders</h2>
+<p>
+The Cretaceous world was very different from the modern world.
+The climate was generally warmer, sea levels were often higher,
+and many regions were covered with forests and wetlands.
+Life existed in the oceans, on land and in the skies.
+</p>
+</div>
+</section>
+
+<section id="history">
+<h2>1. History of the Cretaceous</h2>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cretaceous.jpg" alt="Cretaceous landscape">
+
+<div class="card">
+<h3>The Beginning</h3>
+<p>
+The Cretaceous Period started around 145 million years ago.
+It followed the Jurassic Period and represented the third and final
+period of the Mesozoic Era. At that time, the supercontinent Pangaea
+had already broken apart into several large landmasses.
+</p>
+</div>
+
+<div class="card">
+<h3>Changing Continents</h3>
+<p>
+The continents slowly moved toward their modern positions.
+The Atlantic Ocean continued to widen, while new coastlines and
+shallow seas appeared. These geographical changes created different
+habitats for animals and plants.
+</p>
+</div>
+
+<div class="card">
+<h3>The Climate</h3>
+<p>
+The global climate was generally warmer than today. There were no
+large permanent polar ice sheets like those of the modern world.
+Many areas experienced warm conditions, and shallow seas covered
+large parts of some continents.
+</p>
+</div>
+</section>
+
+<section id="dinosaurs">
+<h2>2. Dinosaurs of the Cretaceous</h2>
+<p>
+The Cretaceous Period was home to many famous dinosaur species.
+They differed greatly in size, diet, movement and behavior.
+</p>
+
+<div class="card">
+<h3>Tyrannosaurus Rex</h3>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tyrannosaurus_rex_skeleton.jpg" alt="Tyrannosaurus rex">
+<p>
+Tyrannosaurus rex lived near the end of the Cretaceous Period
+in what is now western North America. It was a large carnivorous
+dinosaur with powerful jaws, strong legs and a massive skull.
+It was one of the best-known predators in Earth's history.
+</p>
+</div>
+
+<div class="card">
+<h3>Triceratops</h3>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Triceratops_skeleton.jpg" alt="Triceratops">
+<p>
+Triceratops was a large plant-eating dinosaur recognized by its
+three facial horns and large bony frill. It lived in North America
+during the Late Cretaceous. Its strong body and distinctive head
+made it one of the most recognizable dinosaurs.
+</p>
+</div>
+
+<div class="card">
+<h3>Spinosaurus</h3>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Spinosaurus_aegyptiacus.jpg" alt="Spinosaurus">
+<p>
+Spinosaurus lived in North Africa during the Cretaceous Period.
+It had a long narrow snout and a remarkable sail-like structure
+on its back. Scientific evidence suggests that it was strongly
+associated with aquatic environments and ate fish.
+</p>
+</div>
+
+<div class="card">
+<h3>Velociraptor</h3>
+<p>
+Velociraptor was a relatively small feathered theropod dinosaur.
+It lived in Asia and had a long tail, sharp teeth and a large
+curved claw on each hind foot. Fossils show that it was covered
+with feathers.
+</p>
+</div>
+</section>
+
+<section id="ecosystems">
+<h2>3. Ecosystems and Habitats</h2>
+
+<div class="card">
+<h3>Forests</h3>
+<p>
+Cretaceous forests included conifers, ferns, cycads and many
+other plants. Flowering plants also became increasingly important.
+These forests provided food and shelter for many animals.
+</p>
+</div>
+
+<div class="card">
+<h3>Oceans and Seas</h3>
+<p>
+The oceans were full of life. Marine reptiles such as mosasaurs
+and plesiosaurs lived in the seas, while ammonites and many kinds
+of fish were common. Shallow marine environments covered extensive
+areas of some continents.
+</p>
+</div>
+
+<div class="card">
+<h3>Rivers and Wetlands</h3>
+<p>
+Rivers, lakes and wetlands supported many different organisms.
+Some dinosaurs lived near these water sources because they
+provided plants, fish and other food. These environments were
+important parts of ancient ecosystems.
+</p>
+</div>
+</section>
+
+<section id="life">
+<h2>4. Ancient Life Beyond Dinosaurs</h2>
+
+<div class="card">
+<h3>Flying Reptiles</h3>
+<p>
+Pterosaurs were flying reptiles that lived during the Mesozoic Era.
+They were not dinosaurs, although they were close evolutionary
+relatives. Some Cretaceous pterosaurs had enormous wingspans and
+were among the largest animals ever capable of powered flight.
+</p>
+</div>
+
+<div class="card">
+<h3>Marine Reptiles</h3>
+<p>
+Mosasaurs were large marine reptiles that lived in the oceans
+during the Late Cretaceous. Plesiosaurs were another group of
+marine reptiles, many of which had long necks and paddle-like limbs.
+They were important members of ancient marine ecosystems.
+</p>
+</div>
+
+<div class="card">
+<h3>Early Birds and Mammals</h3>
+<p>
+Birds evolved from theropod dinosaurs, and many early bird groups
+lived during the Cretaceous. Mammals also existed during this time,
+although most were relatively small compared with the giant dinosaurs.
+They occupied different ecological roles.
+</p>
+</div>
+
+<div class="card">
+<h3>Flowering Plants</h3>
+<p>
+Flowering plants, also known as angiosperms, diversified during
+the Cretaceous Period. They gradually became important parts of
+many terrestrial ecosystems and changed the appearance of ancient
+landscapes.
+</p>
+</div>
+</section>
+
+<section id="extinction">
+<h2>5. The End of the Cretaceous</h2>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Chicxulub_crater.jpg" alt="Chicxulub impact crater">
+
+<div class="card">
+<h3>The Chicxulub Impact</h3>
+<p>
+About 66 million years ago, a large asteroid struck the region
+of the present-day Yucatán Peninsula in Mexico. The impact created
+the Chicxulub crater and caused enormous environmental changes.
+</p>
+</div>
+
+<div class="card">
+<h3>Global Consequences</h3>
+<p>
+Dust and other materials entered the atmosphere and reduced the
+amount of sunlight reaching Earth's surface. This disrupted
+climate conditions and food chains. Many groups of organisms
+disappeared during this mass extinction event.
+</p>
+</div>
+
+<div class="card">
+<h3>Life After the Dinosaurs</h3>
+<p>
+The extinction event marked the end of the Cretaceous Period
+and the Mesozoic Era. Non-avian dinosaurs disappeared, but birds
+survived. Mammals later diversified and became important members
+of ecosystems around the world.
+</p>
+</div>
+
+<div class="card">
+<h3>Why Is It Important?</h3>
+<p>
+The end-Cretaceous extinction is one of the most important events
+in Earth's history. It changed the course of evolution and helped
+shape the modern natural world.
+</p>
+</div>
+</section>
+
+<footer>
+<p>CRETACEOUS WORLD</p>
+<p>An Educational Journey Through Prehistoric Earth</p>
+<p>© 2026 - Created for Science and Discovery</p>
+</footer>
+
+<script>
+function showPage(page){
+ document.querySelectorAll("section").forEach(function(section){
+  section.classList.remove("active");
+ });
+ document.getElementById(page).classList.add("active");
+ window.scrollTo(0,0);
+}
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cretaceous World</title>
+
+<style>
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{
+ margin:0;
+ font-family:Arial,sans-serif;
+ background:#101b16;
+ color:#f1f5ed;
+ line-height:1.8;
+}
+header{
+ background:#172b20;
+ padding:20px;
+ text-align:center;
+ border-bottom:2px solid #8aab67;
+}
+header h1{color:#b8d58b;font-size:30px}
+nav{
+ display:flex;
+ flex-wrap:wrap;
+ justify-content:center;
+ gap:8px;
+ padding:15px;
+ background:#20372a;
+ position:sticky;
+ top:0;
+ z-index:10;
+}
+nav button{
+ background:#476b43;
+ color:white;
+ border:0;
+ padding:10px 14px;
+ border-radius:8px;
+ font-weight:bold;
+}
+nav button:hover{background:#8aab67;color:#102015}
+section{
+ display:none;
+ padding:25px 18px;
+ max-width:950px;
+ margin:auto;
+ min-height:75vh;
+}
+section.active{display:block}
+h2{color:#b8d58b;font-size:27px}
+h3{color:#d1e5a9}
+p{font-size:16px}
+.hero{
+ text-align:center;
+ padding:65px 20px;
+ background:linear-gradient(120deg,#14251b,#46613c);
+ border-radius:15px;
+ margin-top:15px;
+}
+.hero h2{font-size:35px}
+img{
+ width:100%;
+ max-height:380px;
+ object-fit:cover;
+ border-radius:12px;
+ margin:15px 0;
+ border:2px solid #607c4e;
+}
+.card{
+ background:#1c3024;
+ padding:18px;
+ border-radius:12px;
+ margin:18px 0;
+}
+footer{
+ text-align:center;
+ padding:25px;
+ background:#172b20;
+ color:#b8d58b;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🦖 CRETACEOUS WORLD</h1>
+<p>Explore the Last Age of Dinosaurs</p>
+</header>
+
+<nav>
+<button onclick="showPage('home')">Home</button>
+<button onclick="showPage('history')">History</button>
+<button onclick="showPage('dinosaurs')">Dinosaurs</button>
+<button onclick="showPage('ecosystems')">Ecosystems</button>
+<button onclick="showPage('life')">Ancient Life</button>
+<button onclick="showPage('extinction')">Extinction</button>
+</nav>
+
+<section id="home" class="active">
+<div class="hero">
+<h2>Welcome to the Cretaceous Period</h2>
+<p>Discover a world ruled by dinosaurs, ancient oceans, mysterious forests and extraordinary creatures.</p>
+</div>
+
+<div class="card">
+<h2>What Was the Cretaceous Period?</h2>
+<p>
+The Cretaceous Period was the final period of the Mesozoic Era.
+It began approximately 145 million years ago and ended about
+66 million years ago. It was one of the most fascinating chapters
+in the history of life on Earth.
+</p>
+<p>
+During this time, dinosaurs lived in many different environments.
+Some were enormous plant-eaters, while others were powerful predators.
+The continents continued moving apart, oceans changed, and flowering
+plants began spreading across the planet.
+</p>
+</div>
+
+<div class="card">
+<h2>A World Full of Wonders</h2>
+<p>
+The Cretaceous world was very different from the modern world.
+The climate was generally warmer, sea levels were often higher,
+and many regions were covered with forests and wetlands.
+Life existed in the oceans, on land and in the skies.
+</p>
+</div>
+</section>
+
+<section id="history">
+<h2>1. History of the Cretaceous</h2>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cretaceous.jpg" alt="Cretaceous landscape">
+
+<div class="card">
+<h3>The Beginning</h3>
+<p>
+The Cretaceous Period started around 145 million years ago.
+It followed the Jurassic Period and represented the third and final
+period of the Mesozoic Era. At that time, the supercontinent Pangaea
+had already broken apart into several large landmasses.
+</p>
+</div>
+
+<div class="card">
+<h3>Changing Continents</h3>
+<p>
+The continents slowly moved toward their modern positions.
+The Atlantic Ocean continued to widen, while new coastlines and
+shallow seas appeared. These geographical changes created different
+habitats for animals and plants.
+</p>
+</div>
+
+<div class="card">
+<h3>The Climate</h3>
+<p>
+The global climate was generally warmer than today. There were no
+large permanent polar ice sheets like those of the modern world.
+Many areas experienced warm conditions, and shallow seas covered
+large parts of some continents.
+</p>
+</div>
+</section>
+
+<section id="dinosaurs">
+<h2>2. Dinosaurs of the Cretaceous</h2>
+<p>
+The Cretaceous Period was home to many famous dinosaur species.
+They differed greatly in size, diet, movement and behavior.
+</p>
+
+<div class="card">
+<h3>Tyrannosaurus Rex</h3>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tyrannosaurus_rex_skeleton.jpg" alt="Tyrannosaurus rex">
+<p>
+Tyrannosaurus rex lived near the end of the Cretaceous Period
+in what is now western North America. It was a large carnivorous
+dinosaur with powerful jaws, strong legs and a massive skull.
+It was one of the best-known predators in Earth's history.
+</p>
+</div>
+
+<div class="card">
+<h3>Triceratops</h3>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Triceratops_skeleton.jpg" alt="Triceratops">
+<p>
+Triceratops was a large plant-eating dinosaur recognized by its
+three facial horns and large bony frill. It lived in North America
+during the Late Cretaceous. Its strong body and distinctive head
+made it one of the most recognizable dinosaurs.
+</p>
+</div>
+
+<div class="card">
+<h3>Spinosaurus</h3>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Spinosaurus_aegyptiacus.jpg" alt="Spinosaurus">
+<p>
+Spinosaurus lived in North Africa during the Cretaceous Period.
+It had a long narrow snout and a remarkable sail-like structure
+on its back. Scientific evidence suggests that it was strongly
+associated with aquatic environments and ate fish.
+</p>
+</div>
+
+<div class="card">
+<h3>Velociraptor</h3>
+<p>
+Velociraptor was a relatively small feathered theropod dinosaur.
+It lived in Asia and had a long tail, sharp teeth and a large
+curved claw on each hind foot. Fossils show that it was covered
+with feathers.
+</p>
+</div>
+</section>
+
+<section id="ecosystems">
+<h2>3. Ecosystems and Habitats</h2>
+
+<div class="card">
+<h3>Forests</h3>
+<p>
+Cretaceous forests included conifers, ferns, cycads and many
+other plants. Flowering plants also became increasingly important.
+These forests provided food and shelter for many animals.
+</p>
+</div>
+
+<div class="card">
+<h3>Oceans and Seas</h3>
+<p>
+The oceans were full of life. Marine reptiles such as mosasaurs
+and plesiosaurs lived in the seas, while ammonites and many kinds
+of fish were common. Shallow marine environments covered extensive
+areas of some continents.
+</p>
+</div>
+
+<div class="card">
+<h3>Rivers and Wetlands</h3>
+<p>
+Rivers, lakes and wetlands supported many different organisms.
+Some dinosaurs lived near these water sources because they
+provided plants, fish and other food. These environments were
+important parts of ancient ecosystems.
+</p>
+</div>
+</section>
+
+<section id="life">
+<h2>4. Ancient Life Beyond Dinosaurs</h2>
+
+<div class="card">
+<h3>Flying Reptiles</h3>
+<p>
+Pterosaurs were flying reptiles that lived during the Mesozoic Era.
+They were not dinosaurs, although they were close evolutionary
+relatives. Some Cretaceous pterosaurs had enormous wingspans and
+were among the largest animals ever capable of powered flight.
+</p>
+</div>
+
+<div class="card">
+<h3>Marine Reptiles</h3>
+<p>
+Mosasaurs were large marine reptiles that lived in the oceans
+during the Late Cretaceous. Plesiosaurs were another group of
+marine reptiles, many of which had long necks and paddle-like limbs.
+They were important members of ancient marine ecosystems.
+</p>
+</div>
+
+<div class="card">
+<h3>Early Birds and Mammals</h3>
+<p>
+Birds evolved from theropod dinosaurs, and many early bird groups
+lived during the Cretaceous. Mammals also existed during this time,
+although most were relatively small compared with the giant dinosaurs.
+They occupied different ecological roles.
+</p>
+</div>
+
+<div class="card">
+<h3>Flowering Plants</h3>
+<p>
+Flowering plants, also known as angiosperms, diversified during
+the Cretaceous Period. They gradually became important parts of
+many terrestrial ecosystems and changed the appearance of ancient
+landscapes.
+</p>
+</div>
+</section>
+
+<section id="extinction">
+<h2>5. The End of the Cretaceous</h2>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Chicxulub_crater.jpg" alt="Chicxulub impact crater">
+
+<div class="card">
+<h3>The Chicxulub Impact</h3>
+<p>
+About 66 million years ago, a large asteroid struck the region
+of the present-day Yucatán Peninsula in Mexico. The impact created
+the Chicxulub crater and caused enormous environmental changes.
+</p>
+</div>
+
+<div class="card">
+<h3>Global Consequences</h3>
+<p>
+Dust and other materials entered the atmosphere and reduced the
+amount of sunlight reaching Earth's surface. This disrupted
+climate conditions and food chains. Many groups of organisms
+disappeared during this mass extinction event.
+</p>
+</div>
+
+<div class="card">
+<h3>Life After the Dinosaurs</h3>
+<p>
+The extinction event marked the end of the Cretaceous Period
+and the Mesozoic Era. Non-avian dinosaurs disappeared, but birds
+survived. Mammals later diversified and became important members
+of ecosystems around the world.
+</p>
+</div>
+
+<div class="card">
+<h3>Why Is It Important?</h3>
+<p>
+The end-Cretaceous extinction is one of the most important events
+in Earth's history. It changed the course of evolution and helped
+shape the modern natural world.
+</p>
+</div>
+</section>
+
+<footer>
+<p>CRETACEOUS WORLD</p>
+<p>An Educational Journey Through Prehistoric Earth</p>
+<p>© 2026 - Created for Science and Discovery</p>
+</footer>
+
+<script>
+function showPage(page){
+ document.querySelectorAll("section").forEach(function(section){
+  section.classLis
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cretaceous World</title>
+
+<style>
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{
+ margin:0;
+ font-family:Arial,sans-serif;
+ background:#101b16;
+ color:#f1f5ed;
+ line-height:1.8;
+}
+header{
+ background:#172b20;
+ padding:20px;
+ text-align:center;
+ border-bottom:2px solid #8aab67;
+}
+header h1{color:#b8d58b;font-size:30px}
+nav{
+ display:flex;
+ flex-wrap:wrap;
+ justify-content:center;
+ gap:8px;
+ padding:15px;
+ background:#20372a;
+ position:sticky;
+ top:0;
+ z-index:10;
+}
+nav button{
+ background:#476b43;
+ color:white;
+ border:0;
+ padding:10px 14px;
+ border-radius:8px;
+ font-weight:bold;
+}
+nav button:hover{background:#8aab67;color:#102015}
+section{
+ display:none;
+ padding:25px 18px;
+ max-width:950px;
+ margin:auto;
+ min-height:75v
